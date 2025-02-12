@@ -4,9 +4,9 @@
 
 Student ReadStudentRecFromStream(std::istream& is) {
   std::string firstName, lastName;
-    unsigned int uin;
-    double gpa;
-    char comma;
+    unsigned int uin = 0;
+    double gpa = NAN;
+    char comma = 0;
     if (!(is >> firstName >> lastName)) {
         return Student{};
     }
